@@ -91,7 +91,7 @@ define( 'WP_DEBUG_DISPLAY', true );
 
 define( 'WP_HOME', 'http://wpdevxx.com' );
 
-define( 'WP_SITEURL', 'http://wpdevxx.com/wp' );
+define( 'WP_SITEURL', 'http://wpdevxx.com/bin' );
 
 /** define( 'WPINC', 'assets' ); */
 
@@ -103,13 +103,13 @@ define( 'WP_CONTENT_URL', 'http://wpdevxx.com/app' );
 
 /** define('WP_CONTENT_URL', 'http://mysite.com/path/to/my/content-dir'); */
 
-define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/myplugins' );
+define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/services' );
 
-define( 'WP_PLUGIN_URL', WP_CONTENT_URL . '/myplugins' );
+define( 'WP_PLUGIN_URL', WP_CONTENT_URL . '/services' );
 
 /** Without a trailing slash, this path must not be absolute: it is relative to the ABSPATH constant defined by WordPress. */
 
-define( 'UPLOADS', '../media' );
+define( 'UPLOADS', '/media' );
 
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
@@ -149,7 +149,7 @@ add_action( 'admin_head', 'fpw_populate_upload_path' );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname( __FILE__ ) . '/wp' );
+	define( 'ABSPATH', dirname( __FILE__ ) . '/bin' );
 }
 
 /** Sets up WordPress vars and included files. */
