@@ -130,21 +130,6 @@ define( 'WP_POST_REVISIONS', true );
 /** Too many revisions?  */
 define( 'WP_POST_REVISIONS', 2 );
 
-/*  Re-enables 'upload_path' and 'upload_url_path'
-    on 'Settings -> Media'
-*/
-
-/*
-function fpw_populate_upload_path() {
-    if( is_user_logged_in() && current_user_can( 'manage_options' ) )
-        if ( empty( get_option( 'upload_path' ) ) )
-            update_option( 'upload_path', '/media' );
-}
-add_action( 'admin_head', 'fpw_populate_upload_path' );
-
-*/
-
-
 /** That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
