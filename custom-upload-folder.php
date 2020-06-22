@@ -28,7 +28,6 @@ function fks_populate_upload_url_path() {
 fks_populate_upload_url_path();
 
 function fks_populate_uuploads_use_yearmonth_folders() {
-    if ( empty( get_option( 'uploads_use_yearmonth_folders' ) ) )
         update_option( 'uploads_use_yearmonth_folders', 'no' );
 }
 
